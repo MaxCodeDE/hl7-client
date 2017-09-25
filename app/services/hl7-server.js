@@ -5,6 +5,6 @@ export default Ember.Service.extend({
     serverIp: null,
     serverPort: null,
     
-    messagesPath: null,
+    messagesPath: null
     
 });

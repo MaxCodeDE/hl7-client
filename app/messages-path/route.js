@@ -7,14 +7,8 @@ export default Ember.Route.extend({
     beforeModel() {
         if (this.get('hl7Server.messagesPath')) {
             this.transitionTo('messages');
-        }
-    },
-    
-    
-    actions: {
-        setPath(messagesPath) {
-            this.get('hl7Server').set('messagesPath', messagesPath);
-            this.transitionTo('messages');
+        } else {
+            this.transitionTo('messages-settings');
         }
     }
 

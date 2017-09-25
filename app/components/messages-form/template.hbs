@@ -1,0 +1,9 @@
+<div class="row">
+    {{md-input value=filename label='Filename' class="col s12"}}
+    {{md-textarea label='Data'
+    value=message class="col s12"}}
+</div>
+
+<a class="btn btn-margin" onclick={{action (route-action 'createHl7File' filename message)}}>Create</a>
+
+<a class="btn btn-margin red" onclick={{action (route-action 'cancel')}}>Cancel</a>

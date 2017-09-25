@@ -1,0 +1,10 @@
+<br>
+{{hl7-server-view isChip=true prefix="Connected Server: "}}
+
+<div class="row">
+    {{md-input value=serverIp label='Server IP' class="col s8"}}
+    {{md-input value=serverPort label='Port' type="number" class="col s4"}}
+    {{md-input value=hl7MessagePath label='Hl7 Messages path' class="col s12"}}
+</div>
+
+<div class="mb-button-action">{{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Next' action=(route-action 'setServerSettings' serverIp serverPort hl7MessagePath) class="light-green"}}</div>
