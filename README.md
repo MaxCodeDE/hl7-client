@@ -1,7 +1,6 @@
 # hl7-client
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A hl7-client to test hl7 communication.
 
 ## Prerequisites
 
