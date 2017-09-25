@@ -1,0 +1,11 @@
+{{#if isChip}}
+    {{#if (and  (not-eq hl7Server.serverIp null) (not-eq hl7Server.serverPort null))}}
+        <div class="chip">
+            {{prefix}}{{serverSettings}}
+        </div>
+    {{/if}}
+{{else}}
+    {{#if (and  (not-eq hl7Server.serverIp null) (not-eq hl7Server.serverPort null))}}
+        {{prefix}}{{serverSettings}}
+    {{/if}}
+{{/if}}

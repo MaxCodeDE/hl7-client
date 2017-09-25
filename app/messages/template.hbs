@@ -1,0 +1,19 @@
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large home-color">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+
+<br>
+
+{{#md-card-collapsible accordion=false}}
+    {{#each model as |file|}}
+        {{#md-collapsible icon="material-icons" title=file.filename}}
+            <div>
+                <p>Data: <br> {{{file.fileData}}}</p>
+                <a class="waves-effect waves-light btn blue" onclick={{action (route-action 'sendMessage' file)}}><i class="material-icons left">send</i> Send</a>
+                <a class="waves-effect waves-light btn red"><i class="material-icons left">delete</i> Remove</a>
+            </div>
+        {{/md-collapsible}}
+    {{/each}}
+{{/md-card-collapsible}}
