@@ -5,9 +5,9 @@
             <div class="card-content">
                 <span class="card-title">{{log.file}}</span>
                 <p class="log-card-header">Message:</p>
-                <p>{{log.message}}</p>
+                <p>{{{log.message}}}</p>
                 <p class="log-card-header">Ack</p>
-                <p>{{log.ack}}</p>
+                <p>{{{log.ack}}}</p>
             </div>
             <div class="card-action">
                 <a class="clickable" onclick={{action (route-action 'resend' log)}}>Resend</a>

@@ -45,8 +45,8 @@ export default Ember.Route.extend({
                 console.log(ack.log());
                 // create temp log file
                 this.store.createRecord('hl7-log', {
-                    message: msg,
-                    ack: ack.log(),
+                    message: msg.toString().replace(/(?:\r\n|\r|\n)/g, '<br />'),
+                    ack: ack.log().toString().replace(/(?:\r\n|\r|\n)/g, '<br />'),
                     file: file.get('filename')
                 });
             });
