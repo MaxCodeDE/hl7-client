@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('messages-path');
   this.route('messages-settings');
   this.route('messages-new');
+  this.route('messages-log');
 });
 
 export default Router;

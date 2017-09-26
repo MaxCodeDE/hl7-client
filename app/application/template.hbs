@@ -1,16 +1,15 @@
-  <nav class="nav-extended mb-color">
+<nav class="nav-extended mb-color">
     <div class="nav-wrapper">
       <div href="#" class="brand-logo">&nbsp;&nbsp;&nbsp; Hl7 Client</div>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="hl7-server-view">{{hl7-server-view prefix="Server: "}}</li>
-        </ul>
     </div>
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab" onclick={{action (route-action 'goTo' 'index')}}><a href="#index">Home</a></li>
         <li class="tab" onclick={{action (route-action 'goTo' 'messages-path')}}><a href="#hl7">Send hl7 message</a></li>
+        <li class="tab" onclick={{action (route-action 'goTo' 'messages-log')}}><a href="#log">Log</a></li>
       </ul>
     </div>
   </nav>
   <div class="content" id="index" class="col s12">{{outlet}}</div>
   <div class="content" id="hl7" class="col s12">{{outlet}}</div>
+  <div class="content" id="log" class="col s12">{{outlet}}</div>

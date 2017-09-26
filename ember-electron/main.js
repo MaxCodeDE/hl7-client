@@ -42,9 +42,10 @@ app.on('ready', () => {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
+        icon: __dirname + '/Logo.ico'
     });
 
-    mainWindow.maximize();
+    //mainWindow.maximize();
 
     // If you want to open up dev tools programmatically, call
     // mainWindow.openDevTools();

@@ -1,7 +1,7 @@
 <div>  
     {{#if isEditigData}}
         {{md-textarea label='Message' value=file.fileData class="col s12"}}
-        <a class="btn" onclick={{action 'setEditing' false}}><i class="material-icons left">save</i> Save</a>
+        <a class="btn green" onclick={{action 'setEditing' false}}><i class="material-icons left">save</i> Save</a>
     {{else}}
         <p>Data: <br> {{{file.fileData}}}</p>
         <a class="btn-large blue" onclick={{action (route-action 'sendMessage' file)}}><i class="material-icons left">send</i> Send</a>
